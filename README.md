@@ -19,6 +19,12 @@ This architecture in this example is applied to the token generation.
 1.  **Thought State Autoencoder:** An autoencoder is employed to compress the high-dimensional 3D state of the CTN into a compact, lower-dimensional latent representation. This compression forces the model to identify features of its evolving internal state.
 2.  **Latent State Prediction Module:** This component is trained to predict the temporal evolution of the compressed latent thought state. Its purpose is to model the internal dynamics, providing a self-reference objective.
 
+## Todo (To Test)
+
+* Learnable transfer?
+* 4D History?
+* Multiple channels of small CTNs 
+
 ## Training
 
 *   **Combined Training Objective:** The model is optimized simultaneously for two distinct, yet complementary, objectives:
